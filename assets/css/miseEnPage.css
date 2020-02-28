@@ -1,0 +1,90 @@
+h1 {
+    color: #e22b4a;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+}
+/* Styliser un lien :
+ Il y a 4 états, à utiliser dans cet ordre :
+ :link ( par défaut )
+ :visited
+ :hover
+ :active - optionnel )
+ */
+
+a:link {
+    color: darkgoldenrod;
+}
+
+
+a:visited {
+    color: darkolivegreen;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: gold;
+}
+
+a:active {
+    color: rebeccapurple;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+p {
+    width: 50%;
+    margin: 0 auto;
+    /* Version compressée */
+    padding: 50px;
+    /* padding haut, droite, bas, gauche
+    padding: 50px 50px 50px 50px;
+     */
+    /*Haut+bas / Droite+gauche
+    padding: 50px 50px;
+     */
+    /*
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+*/
+    border-color: #e22b4a;
+    border-bottom-style: dashed;
+    border-top-style: groove;
+    border-left-style: dotted;
+    border-right-style: dotted;
+
+}
+
+img {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+/*
+Balises 'Block : '
+Se mettent les unes en dessous des autres.
+Se comportent comme une boite, qu'on peut maniupler (hauteur, largeur, marges, padding...
+
+Balise 'Inline' -> Balise de texte
+ */
+
+span {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    border: thin solid black;
+    margin: 50px;
+    padding: 20px;
+    display: inline-block;
+}

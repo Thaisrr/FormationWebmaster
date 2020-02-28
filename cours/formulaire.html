@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les Formulaires</title>
+</head>
+<body>
+
+<fieldset>
+    <legend>Mon formulaire</legend>
+    <!-- Les méthodes de formulaire :
+    - POST : pur envoyer des données à une API, / une base de donnée / au back end : inscription, ajout d'article, ect...
+    - GET : pour récupérer les données : barre de recherche, connexion
+    -->
+    <!-- L'action du formulaire :
+    La méthode appelée lors de la soumission du formulaire
+    -->
+    <form method="post" action="">
+
+        <!-- Les Labels : texte avant le champs de formulaire
+         on utilise l'attribut 'for' pour le lier au champs, via son ID unique-->
+        <label for="first">Mon premier input :</label>
+        <!-- Les inputs -->
+        <input id="first"/>
+
+        <!-- Input de texte -->
+        <div>
+            <label for="name">Nom</label>
+            <!-- Les inputs peuvent avoir plusieurs types, text est le type par défaut -->
+            <input id="name" name="name" type="text">
+        </div>
+        <!-- On peut ajouter des attributs à notre input, afin de sécuriser l'entrée et guider l'utilisateur -->
+        <div>
+            <label for="prenom">Prénom</label>
+            <!--
+             minlength : nombre de caractères minimum
+             maxlength: nombre de caractères maximum
+             required: oblige l'utilisateur à remplir le champs avant la soumission
+             -->
+            <input id="prenom" required placeholder="Entrez votre prénom" maxlength="10" minlength="2" name="prenom">
+        </div>
+        <div>
+            <label for="mail">Email</label>
+            <input id="mail" type="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Mot de passe</label>
+            <input id="password" type="password" required name="password">
+        </div>
+
+        <!-- Autres inputs -->
+        <div>
+            <label for="birthday">Date</label>
+            <input type="date" id="birthday">
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input id="age" type="number" min="10" max="50" step="10">
+        </div>
+        <div>
+            <label for="note">Note</label>
+            <input id="note" type="range" min="0" max="10" step="2">
+        </div>
+
+        <div>
+            <label for="select">Faites votre choix</label>
+            <select id="select">
+                <option value="1">Catégorie 1</option>
+                <option value="2">Catégorie 2</option>
+                <option value="3">Catégorie 3</option>
+            </select>
+        </div>
+
+        <div>
+            <!-- On défini un groupe de radio button en leur donnant tous le même nom -->
+            <!-- choice=2 -->
+            <label for="place">Sur place</label>
+            <input id="place" type="radio" name="choice" checked value="1">
+            <label for="takeAway">A emporter</label>
+            <input id="takeAway" type="radio" name="choice" value="2">
+        </div>
+
+        <div>
+            <!-- legumes=1&legume=2&legume=3 -->
+            <label for="salade">Salade</label>
+            <input id="salade" type="checkbox" name="legumes" value="1" checked>
+            <label for="tomates">Tomates</label>
+            <input id="tomates" type="checkbox" name="legumes" value="2">
+            <label for="oignons">Oignons</label>
+            <input id="oignons" type="checkbox" name="legumes" value="3">
+        </div>
+
+        <!-- Textarea -->
+        <label for="message">Votre message</label>
+        <textarea id="message" maxlength="10" cols="30" rows="10">Hello World !</textarea>
+
+        <!-- L'input qui ne sert à rien : -->
+        <div>
+            <label for="c">Couleur</label>
+            <input type="color" id="c">
+        </div>
+
+        <!-- Les attributs :
+      minlength : nombre de caractères minimum
+      maxlength: nombre de caractères maximum
+      required: oblige l'utilisateur à remplir le champs avant la soumission
+      id : pour lier à un label et/ou pour le CSS
+      class: pour le css
+      name: le nom de l'input, pour récupérer sa valeur en Back end
+      min / max : pour les types number et range : nombre min et nombre max
+      step : pour les types number et range : définir des 'marche' lors de l'augmentation / diminution
+      cols / rows : pour les textarea, pour définir la taille du champs
+      value : valeur par défaut d'un champs ( texte, ect ..  ) ou valeur d'un select, radio button ou checkbox
+      -->
+
+
+
+
+
+
+
+
+
+        <!-- Bouton de soumission : type submit -->
+        <div>
+            <button type="submit">Valider</button>
+        </div>
+
+
+    </form>
+
+</fieldset>
+
+</body>
+</html>

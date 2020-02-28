@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form en Grid</title>
+    <script src="https://kit.fontawesome.com/40784288a5.js" crossorigin="anonymous"></script>
+
+    <style>
+        form {
+            width: 40%;
+            margin: auto;
+        }
+
+        .grid-container {
+            width: 100%;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: 30px 1fr 3fr;
+            grid-template-rows: repeat(4, 30px);
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+        }
+
+        i {
+            font-size: 30px;
+        }
+
+        input {
+            border: none;
+            border-bottom: solid thin #194572;
+            width: 100%;
+        }
+
+        input:focus {
+            outline: none;
+            border: solid thin #194572;
+        }
+
+        button {
+            width: 100%;
+            border: medium solid #194572;
+            background-color: #194572;
+            color: white;
+            padding: 5px;
+            transition-duration: 1s;
+            transition-property: color, background-color, font-weight, border-bottom-color, border-right-color, border-top-color, border-left-color;
+        }
+
+        button:hover {
+            border-color: #194572;
+            background-color: white;
+            color: #194572;
+            font-weight: bolder;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+<main>
+    <form>
+        <div class="grid-container">
+            <i class="fas fa-feather-alt"></i>
+            <label>Mon label</label>
+            <input type="text">
+
+            <i class="fas fa-feather-alt"></i>
+            <label>Mon label</label>
+            <input type="text">
+
+            <i class="fas fa-feather-alt"></i>
+            <label>Mon label</label>
+            <input type="text">
+
+            <i class="fas fa-feather-alt"></i>
+            <label>Mon label</label>
+            <input type="text">
+        </div>
+
+        <div class="button-container">
+            <button>Valider</button>
+        </div>
+    </form>
+
+</main>
+
+
+</body>
+</html>

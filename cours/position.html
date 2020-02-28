@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positions</title>
+    <style>
+
+        body {
+            height: 200vh;
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            margin: 200px auto;
+            border: solid black;
+            position: relative;
+        }
+
+        .block {
+            width: 100px;
+            height: 100px;
+            background-color: darkturquoise;
+            display: inline-block;
+            z-index: 2;
+
+        }
+
+        .absolute {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            background-color: #e22b4a;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 50px;
+            background-color: blueviolet;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: chartreuse;
+        }
+
+        .relative {
+            position: relative;
+            top: 30px;
+            left: 30px;
+            background-color: black;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="block absolute"></div>
+    <div class="block fixed"></div>
+    <div class="block sticky"></div>
+    <div class="block relative"></div>
+    <div class="block"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les Tableaux</title>
+</head>
+<body>
+<h1>Tableau</h1>
+
+<h2>Tableau simple</h2>
+<table border="black">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+</table>
+
+<h2>Corps du tableau</h2>
+
+<table border="black">
+    <!-- Légende du tableau -->
+    <caption>Mon tableau</caption>
+    <!-- Gestion des colonnes, span indique le nombre de colonnes à prendre en compte-->
+    <colgroup>
+        <col span="2" style="background-color: aqua">
+        <col span="1" style="background-color: blueviolet">
+    </colgroup>
+    <thead>
+        <tr>
+            <th colspan="3">Titre de mon tableau</th>
+        </tr>
+        <tr>
+            <!-- Ici, nous ne travaillons pas de données, puisqu'il s'agit d'un entête
+            On utilise donc la balise th, et non td-->
+            <th scope="col">Celulle 1</th>
+            <th scope="col">Celulle 2</th>
+            <th scope="col">Celulle 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td colspan="2">11</td>
+        </tr>
+        <tr>
+            <td rowspan="2">12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <!-- J'utilise au choix th ou td : si j'utilise th : c'est un titre, si j'utilise td, c'est des données -->
+            <th scope="row">Mon footer</th>
+            <td>footer data</td>
+            <td>footer data</td>
+        </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+<body>
+<fieldset>
+    <legend>Contactez-nous</legend>
+    <form action="mailto:trevillon@jehann.fr" method="get" title="Contact">
+        <div>
+            <p class="label">
+                <label for="nom">Nom* :</label>
+            </p>
+            <p class="input">
+                <input name="name" type="text" required="required" id="nom" placeholder="Entrez votre nom" maxlength="50">
+            </p>
+        </div>
+        <div>
+            <p class="label">
+                <label for="firstname">Prénom* :</label>
+            </p>
+            <p class="input">
+                <input name="firstname" type="text" required="required" id="firstname" placeholder="Entrez votre prénom" maxlength="50">
+            </p>
+        </div>
+        <div>
+            <p class="label">
+                <label for="nom">Société :</label>
+            </p>
+            <p class="input">
+                <input name="company" type="text" id="company" placeholder="Entrez le nom de votre société" maxlength="50">
+            </p>
+        </div>
+        <div>
+            <p class="label">
+                <label for="email">Email* :</label>
+            </p>
+            <p class="input">
+                <input type="email" name="email" required="required" id="email" placeholder="Votre Email">
+            </p>
+        </div>
+
+        <div>
+            <p class="label">
+                <label for="texte">Votre message* :</label>
+            </p>
+            <p class="input">
+        <textarea name="message" required="required" id="texte" placeholder="Entrez votre message ici...">Hello
+        </textarea>
+            </p>
+        </div>
+        <div>
+            <button type="submit" name="submit" id="submit" value="Envoyer">Envoyer</button></div>
+    </form>
+</fieldset>
+</body>
+</html>

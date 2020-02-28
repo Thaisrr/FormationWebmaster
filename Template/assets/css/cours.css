@@ -1,0 +1,33 @@
+article {
+    width: 70%;
+    padding: 10%;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+h3 {
+    margin-top: 60px;
+}
+
+div {
+    margin: 100px 0;
+}
+
+aside {
+    padding: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border-left: thin solid var(--dark);
+    width: 20%;
+    box-sizing: content-box;
+}
+
+
+
+aside p {
+    padding: 5px;
+    background-color: var(--main);
+}

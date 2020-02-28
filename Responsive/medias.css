@@ -1,0 +1,38 @@
+main {
+    width: 70%;
+    margin: 50px auto;
+}
+
+.article-container {
+    border: black solid medium;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.small-img {
+    width: 250px;
+    float: right;
+}
+
+/*
+1. Modifier pour les tablettes / petits pc : moins de marge entre l'article et l'écran. */
+@media screen and (max-width: 1000px) and (min-width: 780px) {
+    main {
+        width: 90%;
+    }
+}
+
+/*
+2. Modifier la taille de l'image, pour qu'elle reste dans son conteneur + la laisser en haut
+ */
+@media screen and (max-width: 780px) {
+    main {
+        width: 95%;
+    }
+
+    .small-img {
+        float: none;
+        width: 100%;
+    }
+}

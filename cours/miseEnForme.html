@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mise en Forme</title>
+    <link href="../assets/css/normalize.css" rel="stylesheet">
+    <style>
+        #header-img {
+          display: none;
+        }
+
+        header {
+            background-image: url("../assets/images/chat.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 90vh;
+            position: relative;
+        }
+
+        h1 {
+            position: absolute;
+            top: 30vh;
+            width: 100%;
+            text-align: center;
+            font-size: 50px;
+            font-family: sans-serif;
+        }
+
+        #main-container {
+            width: 80%;
+            margin: 100px auto;
+        }
+
+        .card {
+            width: 400px;
+            height: 500px;
+            overflow: hidden;
+            -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+            box-sizing: border-box;
+            border: transparent 1px solid;
+        }
+
+        .card:hover {
+            box-shadow: none;
+            border: 1px solid black;
+        }
+
+        .card-header {
+            height: 50%;
+            overflow: hidden;
+        }
+
+        .card-header img {
+            width: 100%;
+        }
+
+        .card-body {
+            height: 40%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card-footer {
+            height: 10%;
+        }
+
+        .card-footer button {
+            display: block;
+            width: calc(100% - 40px);
+            margin: auto;
+            padding: 5px;
+            color: white;
+            background-color: darkturquoise;
+            border: medium solid darkturquoise;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-footer button:hover {
+            background-color: white;
+            color: darkturquoise;
+        }
+
+        /****************************************************************************/
+
+        .card-img-bis {
+            width: 50%;
+            float: right;
+        }
+
+        .card-img-bis img {
+            width: 100%;
+        }
+
+        .padding {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<header id="header">
+
+    <h1>Nom du site</h1>
+    <img id="header-img" src="../assets/images/office-design.jpg">
+
+</header>
+
+<main>
+    <div id="main-container">
+
+        <div class="card">
+            <div class="card-header">
+                <!-- Pour mon image -->
+                <img src="../assets/images/spacesheep.jpg">
+            </div>
+            <div class="card-body">
+                <!-- Pour mon texte -->
+                <h3 class="card-title">Ma carte</h3>
+                <p>Ceci est un paragraphe de description de ma carte. Bla bla lorem ipsum blabla.</p>
+            </div>
+            <div class="card-footer">
+                <!-- Pour mes liens -->
+                <button type="button">Clic clic</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <!-- Pour mon image -->
+                <img src="../assets/images/stars.jpg">
+            </div>
+            <div class="card-body">
+                <!-- Pour mon texte -->
+                <h3 class="card-title">Ma carte</h3>
+                <p>Ceci est un paragraphe de description de ma carte. Bla bla lorem ipsum blabla.</p>
+            </div>
+            <div class="card-footer">
+                <!-- Pour mes liens -->
+                <button type="button">Clic clic</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <!-- Pour mon image -->
+                <img src="../assets/images/aurora-borealis-in-winter-sky.jpg">
+            </div>
+            <div class="card-body">
+                <!-- Pour mon texte -->
+                <h3 class="card-title">Ma carte</h3>
+                <p>Ceci est un paragraphe de description de ma carte. Bla bla lorem ipsum blabla.</p>
+            </div>
+            <div class="card-footer">
+                <!-- Pour mes liens -->
+                <button type="button">Clic clic</button>
+            </div>
+        </div>
+
+        <hr/>
+<!-- Les floats-------------------------------------- -->
+        <div class="card padding">
+            <div class="card-img-bis">
+                <img src="../assets/images/christmas.jpg">
+            </div>
+            <div class="card-body-bis">
+                <h3 class="card-title">Ma carte</h3>
+                <p>
+                    Powder tart fruitcake cookie cookie dessert.
+                    Danish tart tart sugar plum pastry.
+                    Cake muffin candy tiramisu brownie tiramisu topping donut.
+                </p>
+                <p>
+                    Donut apple pie carrot cake soufflé chocolate cake.
+                    Cupcake toffee gummies chocolate bar jelly-o macaroon.
+                    Biscuit donut chocolate bar gingerbread oat cake pastry.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</main>
+
+
+</body>
+</html>

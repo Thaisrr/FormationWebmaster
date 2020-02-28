@@ -1,0 +1,53 @@
+.contact-container li {
+    list-style: none;
+    margin: 1em 0;
+
+}
+
+.contact-container li::before {
+    content: '♨';
+}
+
+.map {
+    border: none;
+    width: 100%;
+
+}
+
+.map-container, .contact-container {
+
+}
+
+main .flex-container {
+    justify-content:space-evenly;
+    width: 65%;
+}
+
+input, textarea {
+    border: none;
+    border-bottom: var(--main) solid 3px;
+    width: 65%;
+    height: 30px;
+    margin: 5px;
+}
+
+textarea {
+    height: 70px;
+}
+
+button {
+    margin: 25px 0;
+}
+
+
+label {
+    display: inline-block;
+    width: 30%;
+}
+
+fieldset {
+    width: 50%;
+    margin: auto;
+    border: none;
+}
+

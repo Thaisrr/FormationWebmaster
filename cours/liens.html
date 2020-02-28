@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les liens hypertextes</title>
+</head>
+<body>
+<h1>Les liens</h1>
+
+<h2>Les liens externes</h2>
+
+<a href="https://www.dawan.fr">Le site de Dawan</a>
+<a href="http://www.cupcakeipsum.com/">Cupcake Ipsum</a>
+<a href="https://developer.mozilla.org/fr/docs/Web/HTML">Documentation Mozilla</a>
+<a href="https://www.w3schools.com/">Documentation W3School</a>
+
+<h2>Les liens internes</h2>
+
+<!-- Si la page est dans le même dossier -->
+<a href="firstPage.html">Première page HTML</a>
+<!-- Sinon, on va le chercher directement -->
+<a href="../Exercice/exercice1.html">Exercice</a>
+
+<h2>Les attributs de 'a'</h2>
+<!-- Par défaut, la page s'ouvre dans la même fenêtre : -->
+<a href="https://www.dawan.fr" target="_self">Dawan</a>
+<!-- Pour ouvrir un nouvel onglet : -->
+<a href="https://www.dawan.fr" target="_blank">Dawan</a>
+<!-- Préconisation w3school quand on utilise l'élément target : utiliser l'attribut rel avec -->
+<a href="https://www.dawan.fr" target="_blank" rel="noopener noreferrer">Dawan</a>
+<!-- Title -->
+<a href="https://www.dawan.fr" target="_blank" title="Un super site !">Cliquez ici !</a>
+
+<p>Les liens peuvent s'insérer dans un paragraphe :
+    <strong><a href="https://www.dawan.fr" target="_blank" title="Un super site !">Cliquez ici !</a></strong>
+     comme ceci !
+</p>
+
+
+<h2>Barre de navigation</h2>
+
+<!-- Pour créer une barre de navigation latérale ou supérieur, on créé une liste de liens -->
+<ul>
+    <li>
+        <a href="liens.html">Les liens</a>
+    </li>
+    <li>
+        <a href="firstPage.html">Le texte</a>
+    </li>
+    <li>
+        <a href="liens.html">Les liens</a>
+    </li>
+    <li>
+        <a href="../Exercice/exercice1.html">Exercice html</a>
+    </li>
+</ul>
+
+<h2> Autres types de liens : </h2>
+<!-- Numéro de téléphone -->
+<a href="tel:0972000000">Téléphone</a>
+<!-- Email -->
+<a href="mailto:trevillon@jehann.fr">Mon email</a>
+<!-- Lien téléchargeable : on force le téléchargement avec l'attribut "download -->
+<!-- Attention, il vaut mieux éviter de le faire, puisque le lien se télécharge sans demande d'autorisation préalable -->
+<a href="../Template/assets/images/baby-yoda.jpeg" download="Baby_Yoda">Clic clic</a>
+
+<!-- Lien vide : -->
+<a href="#">Il n'y a rien à voir ici</a>
+
+
+
+
+
+
+<!--
+<ul>
+    <li> Les cours
+        <ul>
+            <li>
+                <a href="listes.html">Les listes</a>
+            </li>
+            <li>
+                <a href="firstPage.html">Le texte</a>
+            </li>
+            <li>
+                <a href="liens.html">Les liens</a>
+            </li>
+        </ul>
+    </li>
+    <li>Les Exercices
+        <ul>
+            <li>
+                <a href="Exercice/exercice1.html">Exercice HTML</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+-->
+
+
+
+
+
+</body>
+</html>

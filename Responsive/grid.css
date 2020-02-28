@@ -1,0 +1,104 @@
+.box {
+    background-color: #D4AF37;
+    border: #28536B solid medium;
+    height: 200px;
+}
+
+/* On va travailler sur le container :
+ -> On va lui mettre un display : grid.
+ -> Ensuite, on va indiquer le nombre de lignes / et ou de colomnes + la taille des colonnes.
+ */
+
+.container {
+    display: grid;
+    /* Gestion des colonnes :
+     -> chaque taille correspond à une colonne.
+     -> Les tailles peuvent être en %, en px, en vw... et en fr
+     -> Les fr représente une fraction de la grille : le total des fr représente la taille totale de ma grille
+     */
+    grid-template-columns: repeat(3, 1fr);
+}
+/******************** Les lignes : ********************************/
+.box2 {
+    background-color: #75B9BE;
+    border: solid thin #28536B;
+}
+
+.container2 {
+    display: grid;
+    width: 100%;
+    height: 700px;
+    border: solid medium #e22b4a;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/********** Positionner dans une grille : *******************/
+
+.container3 {
+    width: 500px;
+    height: 500px;
+    border: solid #28536B;
+    background-color: #7A8B99;
+    /* Je prépare ma grille : une grille de 5 / 5 cases égales */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.box3 {
+    background-color: #D4AF37;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-end: 4;
+    grid-row-start: 2;
+}
+
+/***** Les aires ***************/
+.page {
+    margin: 50px auto;
+    width: 800px;
+    height: 800px;
+    border: solid #28536B;
+    background-color: #7A8B99;
+    display: grid;
+
+    /* Je recréé le template de ma page : */
+    grid-template: "header header" 50px
+                    "nav section1" 1fr
+                    "nav section2" 1fr
+                    "footer footer" 50px
+                    / 1fr 2fr;
+}
+
+header {
+    background-color: greenyellow;
+    grid-area: header;
+}
+
+nav {
+    background-color: #A9DDD6;
+    grid-area: nav;
+}
+
+.s1 {
+    background-color: rebeccapurple;
+    grid-area: section1;
+    color: white;
+}
+
+.s2 {
+    background-color: #e22b4a;
+    grid-area: section2;
+    color: #D4AF37;
+}
+
+footer {
+    background-color: #28536B;
+    grid-area: footer;
+    color: white;
+}
+
+
+
+
